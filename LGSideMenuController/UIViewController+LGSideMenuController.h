@@ -53,11 +53,12 @@
 
 @end
 
-#pragma mark - Deprecated
+//#pragma mark - Deprecated
+//
+//@interface UIViewController (LGSideMenuControllerDeprecated)
+//
+//- (IBAction)openLeftView:(nullable id)sender DEPRECATED_ATTRIBUTE;
+//- (IBAction)openRightView:(nullable id)sender DEPRECATED_ATTRIBUTE;
+//
+//@end
 
-@interface UIViewController (LGSideMenuControllerDeprecated)
-
-- (IBAction)openLeftView:(nullable id)sender DEPRECATED_ATTRIBUTE;
-- (IBAction)openRightView:(nullable id)sender DEPRECATED_ATTRIBUTE;
-
-@end

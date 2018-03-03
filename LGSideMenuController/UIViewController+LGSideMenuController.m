@@ -116,16 +116,17 @@
 
 @end
 
-#pragma mark - Deprecated
+//#pragma mark - Deprecated
+//
+//@implementation UIViewController (LGSideMenuControllerDeprecated)
+//
+//- (IBAction)openLeftView:(nullable id)sender {
+//    [self showLeftViewAnimated:sender];
+//}
+//
+//- (IBAction)openRightView:(nullable id)sender {
+//    [self showRightViewAnimated:sender];
+//}
+//
+//@end
 
-@implementation UIViewController (LGSideMenuControllerDeprecated)
-
-- (IBAction)openLeftView:(nullable id)sender {
-    [self showLeftViewAnimated:sender];
-}
-
-- (IBAction)openRightView:(nullable id)sender {
-    [self showRightViewAnimated:sender];
-}
-
-@end

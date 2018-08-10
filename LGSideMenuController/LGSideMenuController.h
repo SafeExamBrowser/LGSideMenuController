@@ -567,6 +567,8 @@ LGSideMenuSwipeGestureRange LGSideMenuSwipeGestureRangeMake(CGFloat left, CGFloa
 /** To avoid retain cycle, do not forget about weak reference to self */
 @property (copy, nonatomic, nullable) LGSideMenuHandler willHideLeftView;
 /** To avoid retain cycle, do not forget about weak reference to self */
+@property (copy, nonatomic, nullable) LGSideMenuHandler willHideLeftViewWithGesture;
+/** To avoid retain cycle, do not forget about weak reference to self */
 @property (copy, nonatomic, nullable) LGSideMenuHandler didHideLeftView;
 
 /** To avoid retain cycle, do not forget about weak reference to self */
@@ -748,6 +750,7 @@ LGSideMenuSwipeGestureRange LGSideMenuSwipeGestureRangeMake(CGFloat left, CGFloa
 - (void)didShowLeftView:(nonnull UIView *)leftView sideMenuController:(nonnull LGSideMenuController *)sideMenuController;
 
 - (void)willHideLeftView:(nonnull UIView *)leftView sideMenuController:(nonnull LGSideMenuController *)sideMenuController;
+- (void)willHideLeftViewWithGesture:(nonnull UIView *)leftView sideMenuController:(nonnull LGSideMenuController *)sideMenuController;
 - (void)didHideLeftView:(nonnull UIView *)leftView sideMenuController:(nonnull LGSideMenuController *)sideMenuController;
 
 - (void)willShowRightView:(nonnull UIView *)rightView sideMenuController:(nonnull LGSideMenuController *)sideMenuController;

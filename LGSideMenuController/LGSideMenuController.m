@@ -2409,12 +2409,14 @@ rightViewBackgroundImageFinalScale = _rightViewBackgroundImageFinalScale;
 
     // -----
 
-    [LGSideMenuHelper statusBarAppearanceUpdateAnimated:animated
-                                         viewController:self
-                                               duration:self.leftViewAnimationDuration
-                                                 hidden:self.rootViewStatusBarHidden
-                                                  style:self.rootViewStatusBarStyle
-                                              animation:self.leftViewStatusBarUpdateAnimation];
+    if (!self.leftViewShowing ) {
+        [LGSideMenuHelper statusBarAppearanceUpdateAnimated:animated
+                                             viewController:self
+                                                   duration:self.leftViewAnimationDuration
+                                                     hidden:self.rootViewStatusBarHidden
+                                                      style:self.rootViewStatusBarStyle
+                                                  animation:self.leftViewStatusBarUpdateAnimation];
+    }
 
     // -----
 
@@ -2494,7 +2496,7 @@ rightViewBackgroundImageFinalScale = _rightViewBackgroundImageFinalScale;
                                                  viewController:self
                                                        duration:self.leftViewAnimationDuration
                                                          hidden:self.rootViewStatusBarHidden
-                                                          style:self.rootViewStatusBarHidden
+                                                          style:self.rootViewStatusBarStyle
                                                       animation:self.leftViewStatusBarUpdateAnimation];
         }
     }
@@ -2517,7 +2519,7 @@ rightViewBackgroundImageFinalScale = _rightViewBackgroundImageFinalScale;
                                          viewController:self
                                                duration:self.leftViewAnimationDuration
                                                  hidden:self.rootViewStatusBarHidden
-                                                  style:self.rootViewStatusBarHidden
+                                                  style:self.rootViewStatusBarStyle
                                               animation:self.leftViewStatusBarUpdateAnimation];
 
     // -----
@@ -2571,7 +2573,7 @@ rightViewBackgroundImageFinalScale = _rightViewBackgroundImageFinalScale;
                                              viewController:self
                                                    duration:self.leftViewAnimationDuration
                                                      hidden:self.rootViewStatusBarHidden
-                                                      style:self.rootViewStatusBarHidden
+                                                      style:self.rootViewStatusBarStyle
                                                   animation:self.leftViewStatusBarUpdateAnimation];
 
         self.leftViewGestireStartX = nil;

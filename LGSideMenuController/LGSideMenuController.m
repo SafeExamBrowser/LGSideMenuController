@@ -524,8 +524,9 @@ rightViewBackgroundImageFinalScale = _rightViewBackgroundImageFinalScale;
     [self leftViewsValidate];
     [self rightViewsValidate];
 
-    // Don't call this on viewWillAppear
-    //[self viewsHierarchyValidate];
+    // This actually has to be called on viewWillAppear
+    // because otherwise for example shadow won't work
+    [self viewsHierarchyValidate];
 
     [self rootViewsFramesValidate];
     [self leftViewsFramesValidate];

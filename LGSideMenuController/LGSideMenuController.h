@@ -732,11 +732,11 @@ LGSideMenuSwipeGestureRange LGSideMenuSwipeGestureRangeMake(CGFloat left, CGFloa
 /** Unavailable, select it on your rootViewController OR use rootViewShouldAutorotate */
 - (BOOL)shouldAutorotate __attribute__((unavailable("select it on your rootViewController OR use rootViewShouldAutorotate")));
 /** Unavailable, select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarHidden, leftViewStatusBarHidden, rightViewStatusBarHidden */
-- (BOOL)prefersStatusBarHidden __attribute__((unavailable("select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarHidden, leftViewStatusBarHidden, rightViewStatusBarHidden")));
+//- (BOOL)prefersStatusBarHidden __attribute__((unavailable("select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarHidden, leftViewStatusBarHidden, rightViewStatusBarHidden")));
 /** Unavailable, select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarStyle, leftViewStatusBarStyle, rightViewStatusBarStyle */
-- (UIStatusBarStyle)preferredStatusBarStyle __attribute__((unavailable("select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarStyle, leftViewStatusBarStyle, rightViewStatusBarStyle")));
+//- (UIStatusBarStyle)preferredStatusBarStyle __attribute__((unavailable("select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarStyle, leftViewStatusBarStyle, rightViewStatusBarStyle")));
 /** Unavailable, select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarUpdateAnimation, leftViewStatusBarUpdateAnimation, rightViewStatusBarUpdateAnimation */
-- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation __attribute__((unavailable("select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarUpdateAnimation, leftViewStatusBarUpdateAnimation, rightViewStatusBarUpdateAnimation")));
+//- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation __attribute__((unavailable("select it on your rootViewController, leftViewController, rightViewController OR use rootViewStatusBarUpdateAnimation, leftViewStatusBarUpdateAnimation, rightViewStatusBarUpdateAnimation")));
 
 @end
 
